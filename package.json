@@ -1,0 +1,26 @@
+{
+  "name": "password-reset-in-nodejs",
+  "version": "1.0.0",
+  "description": "Implement Password Reset In Node.js. In this Application, we'll go over how to create a forgot your password feature using Express, MongoDB, Passport and Sendgrid. We will build a complete application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagardere/password-reset-in-nodejs.git"
+  },
+  "keywords": [
+    "password",
+    "reset",
+    "forgot",
+    "nodejs",
+    "api"
+  ],
+  "author": "Sagar Dere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagardere/password-reset-in-nodejs/issues"
+  },
+  "homepage": "https://github.com/sagardere/password-reset-in-nodejs#readme"
+}
