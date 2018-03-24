@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  form(method='POST')
+    legend Login
+    .form-group
+      label(for='username') Username
+      input.form-control(type='text', name='username', autofocus)
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password')
+    button.btn.btn-primary(type='submit') Login
+    a.btn.btn-link(href='/forgot') Forgot Password?
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.active
+          a(href='/') Home
+        if user
+          li
+            a(href='/logout') Logout
+        else
+          li
+            a(href='/login') Login
+          li
+            a(href='/signup') Signup
