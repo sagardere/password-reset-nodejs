@@ -14,6 +14,10 @@ var flash = require('express-flash');
 var MongoDBStore = require('connect-mongodb-session')(session);
 var app = express();
 
+//reqire routes folder
+var index = require('./routes/index');
+
+
 //connect to MongoDB
 mongoose.connect('mongodb://localhost/loginapp' , { useMongoClient: true });
 var db = mongoose.connection;
@@ -57,10 +61,7 @@ app.use(flash());
 
 // serve static files from template
 app.use(express.static(path.join(__dirname, 'public')));
-
-// requires all routes
-var routes = require('./routes/routes');
-app.use('/', routes);
+app.use('/', index);
 
 
 app.listen(app.get('port'), function() {

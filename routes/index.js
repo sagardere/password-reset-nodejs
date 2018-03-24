@@ -4,8 +4,7 @@ var router = express.Router();
 
 var userController = require('./user')();
 
-
-//user
+//user routes
 router.get('/',userController.home);
 router.get('/isloggedin',userController.isloggedin);
 router.get('/login',userController.login);
