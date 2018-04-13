@@ -120,7 +120,7 @@ module.exports = () => {
 
           var email = new sendgrid.Email({
               to: user.email,
-              from: 'deresagar01@gmail.com',
+              from: 'your email address',
               subject: 'Signup Varification',
               html: 'Signup Varification.\n\n' +
               'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
@@ -218,7 +218,7 @@ module.exports = () => {
       // setup email data with unicode symbols
       var email = new sendgrid.Email({
               to: user.email,
-              from: 'deresagar01@gmail.com',
+              from: 'your email address',
               subject: 'Password Reset',
               html: 'You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n' +
             'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
@@ -281,7 +281,7 @@ module.exports = () => {
       function(user, done) {
          var email = new sendgrid.Email({
               to: user.email,
-              from: 'deresagar01@gmail.com',
+              from: 'your email address',
               subject: 'Your password has been changed',
               text: 'Hello,\n\n' +
                 'This is a confirmation that the password for your account ' + user.email + ' has just been changed.\n',
