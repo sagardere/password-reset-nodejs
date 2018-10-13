@@ -1,9 +1,8 @@
 var express = require('express');
-var result = express.result();
+//var result = express.result();
 var passport = require('passport');
 var async=require('async');
 var crypto=require('crypto');
-var nodemailer=require('nodemailer');
 var LocalStrategy = require('passport-local').Strategy;
 var sendgrid = require('sendgrid')('your-sendgrid-username', 'your-sendgrid-password');
 

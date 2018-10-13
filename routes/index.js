@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-var userController = require('./user')();
+var userController = require('./users')();
 
 //user routes
 router.get('/',userController.home);
